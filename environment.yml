@@ -1,0 +1,10 @@
+name: nested_json_env
+dependencies:
+  - pip
+  - python=3.7
+  - pip:
+    - pytest==5.4.1
+    - black==19.10b0
+    - pandas
+    - requests
+    - matplotlib
