@@ -1,6 +1,7 @@
 import requests
 import json
 
+
 def download_json(url):
     """
     Retrieve a document or it's summary from the database

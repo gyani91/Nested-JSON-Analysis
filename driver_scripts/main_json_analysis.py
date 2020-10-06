@@ -9,9 +9,10 @@ if __name__ == "__main__":
     url = "https://health.data.ny.gov/api/views/cnih-y5dw/rows.json?accessType=DOWNLOAD"
     data = download_json(url)
 
+    # Print the Nested JSON
     print(json.dumps(data, indent=4))
 
-    # Dump the data to a json file to be read later
+    # Dump the data into a json file to be read later
     with open("../fs.json", "w") as fp:
         json.dump(data, fp, indent=4)
 

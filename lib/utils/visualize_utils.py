@@ -14,7 +14,7 @@ def visualize(data):
     plt.xticks(x_pos, xvalues)
     plt.legend(loc="best")
 
-    # put the actual value labels on top of the bars - make it read friendly
+    # put the actual value labels on top of the bars - make it reader friendly
     for index, value in enumerate(yvalues):
         plt.text(index - 0.1, value + 2, str(int(value)))
 
